@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/Nokia-Bell-Labs/ecg-foundation-model">
-    <img width="20%" height="250%" src="figures/clef-logo.png" alt="CLEF Logo">
+    <img width="20%" height="250%" src="figures/clef_logo.png" alt="CLEF Logo">
   </a>
   <h1>CLEF</h1>
   <h2>Clinically-Guided Contrastive Learning for Electrocardiogram Foundation Models</h2>
