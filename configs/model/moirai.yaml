@@ -1,0 +1,10 @@
+name: "moirai" 
+
+checkpoint_path: null
+
+lead_config: "1lead"   # 1lead, 12lead
+
+model_params:
+  do_proj: true
+  linear_prob: false
+  feature_dim: 768

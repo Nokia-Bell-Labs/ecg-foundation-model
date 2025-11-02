@@ -1,0 +1,22 @@
+epochs: 100
+accelerator: "gpu"
+devices: 1
+batch_size: 64
+learning_rate: 1e-4
+weight_decay: 5e-4
+reverse_eval: False
+patience: 20
+patience_mode: "min"
+patience_delta: 0.0001
+monitor_metric: "train_loss"
+ckpt_name: "best"
+temperature: 0.07
+
+sample_rate: 200
+input_len: 5000
+output_dim: 256
+scale: True
+use_metadata: True
+pretrain_method: "simclr"  # Options: "simclr", "byol", "moco"
+
+project: "CLEF"

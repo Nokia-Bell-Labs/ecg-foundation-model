@@ -1,0 +1,24 @@
+name: "pretrained" 
+
+checkpoint_path: "models/pretrained"
+statekey_file: "clef-small_final_model.ckpt"
+
+lead_config: "1lead"
+
+model_size: small  # small, medium, large 
+
+model_params:
+  do_proj: true
+  linear_prob: true
+
+  freeze_encoder: false  # Whether to freeze the encoder weights
+  freeze_embedder: false  # Whether to freeze the embedder weights
+  enable_gradient_checkpointing: true  # Enable gradient checkpointing for memory efficiency
+
+  model_size: ${model.model_size}
+  feature_dim: ${model.model_size_to_feature_dim.${model.model_size}}
+  
+model_size_to_feature_dim:
+  small: 256  
+  medium: 1024
+  large: 2048

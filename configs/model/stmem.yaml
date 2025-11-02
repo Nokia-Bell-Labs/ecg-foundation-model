@@ -1,0 +1,12 @@
+name: "stmem" 
+
+checkpoint_path: "models/st-mem"
+
+lead_config: "1lead"   # 1lead, 12lead
+
+model_size: stmem
+
+model_params:
+  do_proj: false
+  linear_prob: false
+  feature_dim: 768

@@ -1,0 +1,9 @@
+data_group: mcmed
+name: mcmed
+name_short: mcmed
+data_path: data/MCMED3/multimodal-clinical-monitoring-in-the-emergency-department-mc-med-1.0.0/data/
+metadata_path: null
+label_csv: dataset/mcmed/variables_encounter_all.csv
+num_variables: null
+sample_rate: 100
+lead_num: 12

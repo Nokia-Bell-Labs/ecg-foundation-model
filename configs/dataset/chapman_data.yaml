@@ -1,0 +1,9 @@
+data_group: chapman
+name: chapman
+name_short: chapman
+data_path: dataset/chapman
+metadata_path: null
+label_csv: null
+num_variables: null
+sample_rate: 500
+lead_num: 12

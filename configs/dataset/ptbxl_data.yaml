@@ -1,0 +1,9 @@
+data_group: ptbxl
+name: ptbxl
+name_short: ptbxl
+data_path: data/PTBXL/1.0.3/
+metadata_path: null
+label_csv: null
+num_variables: null
+sample_rate: 500
+lead_num: 12

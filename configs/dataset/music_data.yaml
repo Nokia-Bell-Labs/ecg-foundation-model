@@ -1,0 +1,9 @@
+data_group: music
+name: music
+name_short: music
+data_path: data/MusicSCD/Holter_ECG
+metadata_path: null
+label_csv: dataset/music/standard-outcome-variables.csv
+num_variables: null
+sample_rate: 200
+lead_num: 3
