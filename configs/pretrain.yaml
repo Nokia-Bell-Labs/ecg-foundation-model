@@ -1,0 +1,21 @@
+# Main configuration file for model pretraining
+
+defaults:
+  # - model: dummy_model
+  # - model: ked
+  # - model: stmem
+  # - model: moment
+  - model: resnet
+
+  - dataset: mimiciv_data
+  - exp: exp_pretrain
+
+  - _self_
+
+seed: 42
+experiment_name: "${model.name}_${dataset.name_short}_pretrain"
+
+checkpoint_dir: ./outputs/checkpoints/${experiment_name}
+hydra:
+  run:
+    dir: ./outputs/${experiment_name}/${now:%Y-%m-%d}/${now:%H-%M-%S}

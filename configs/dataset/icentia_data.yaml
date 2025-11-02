@@ -1,0 +1,9 @@
+data_group: icentia
+name: icentia
+name_short: icentia
+data_path: data/Icentia11K/data
+metadata_path: null
+label_csv: null
+num_variables: null
+sample_rate: 250
+lead_num: 1

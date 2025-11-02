@@ -1,0 +1,15 @@
+name: "ked" 
+
+checkpoint_path: "models/ecgfm-ked"
+
+lead_config: "1lead"  # 1lead, 12lead
+
+model_size: ked
+
+model_params:
+  do_proj: true  # Whether to use projection head
+  linear_prob: false
+  kernel_size: 5
+  ps_head: 0.5
+  feature_dim: 768
+  

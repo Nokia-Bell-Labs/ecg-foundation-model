@@ -1,0 +1,71 @@
+# Main configuration file for downstream tasks
+
+defaults:
+  - model: ked  
+  # - model: ecgfounder
+  # - model: stmem
+  # - model: moirai
+  # - model: moment
+  # - model: resnet
+  # - model: pretrained
+  
+
+  # - dataset: music_data
+  # - exp: music_downstream
+
+  # - dataset: chapman_data
+  # - exp: chapman_downstream
+
+  # - dataset: mimiciv_data
+  # - exp: mimiciv_downstream
+
+  # - dataset: ptbxl_data
+  # - exp: ptbxl_downstream
+
+  # - dataset: icentia_data
+  # - exp: icentia_downstream
+
+  # - dataset: mcmed_data
+  # - exp: mcmed_downstream
+
+  - dataset: aurorabp_data
+  - exp: aurorabp_downstream
+
+  
+
+  - _self_ 
+
+seed: 42
+
+# Experiment naming
+experiment_name: "${model.name}_${dataset.name_short}_${task.type}"
+
+# Task configuration
+task:
+  name: "${dataset.data_group}"  # This should match one of the mapped tasks in task_config.py
+  type: "regression"  # "classification" or "regression"
+  lead_config: "${model.lead_config}"  # "1lead" or "12lead"
+  params:
+    ecg_dir: ${dataset.data_path}
+    label_csv: ${dataset.label_csv}
+    batch_size: ${exp.batch_size}
+    num_workers: ${exp.num_workers}
+    input_len: ${exp.input_len}
+    sampling_frequency: ${dataset.sample_rate}
+    
+  model_params:
+    lr: ${exp.learning_rate}
+    weight_decay: ${exp.weight_decay}
+    feature_dim: ${model.model_params.feature_dim}
+    do_proj: ${model.model_params.do_proj}
+    optimizer: ${exp.optimizer}
+    scheduler: ${exp.scheduler}
+
+
+# Hydra output directory configuration
+hydra:
+  run:
+    dir: ./outputs/${experiment_name}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  sweep:
+    dir: ./multirun/${experiment_name}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}

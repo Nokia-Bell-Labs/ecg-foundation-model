@@ -1,0 +1,13 @@
+name: "moment" 
+
+checkpoint_path: null
+
+lead_config: "1lead"
+
+model_params:
+  do_proj: true  # Whether to use projection head
+  linear_prob: false
+  freeze_encoder: false  # Whether to freeze the encoder weights
+  freeze_embedder: false  # Whether to freeze the embedder weights
+  enable_gradient_checkpointing: true  # Enable gradient checkpointing for memory efficiency
+  feature_dim: 768

@@ -1,0 +1,19 @@
+name: "resnet" 
+
+checkpoint_path: null
+
+lead_config: "1lead"  # 1lead, 12lead
+
+model_size: small  # nano, small, medium, large 
+
+model_params:
+  do_proj: true  # Whether to use projection head
+  linear_prob: false
+  model_size: ${model.model_size}
+  feature_dim: ${model.model_size_to_feature_dim.${model.model_size}}
+  
+model_size_to_feature_dim:
+  nano: 128
+  small: 256  
+  medium: 1024
+  large: 2048

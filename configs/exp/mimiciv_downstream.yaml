@@ -1,0 +1,25 @@
+# General experiment settings
+seed: 42
+epochs: 1
+accelerator: gpu
+devices: 2  # GPU device ID
+finetune: true
+ckpt_name: "best_model"
+sample_rate: 500 
+input_len: 5000
+num_classes: 1
+task: LVEF
+
+# Monitoring and early stopping
+monitor_metric: "val_loss" 
+patience: 5
+patience_mode: "min"
+patience_delta: 1e-5
+
+# Training parameters
+batch_size: 64
+num_workers: 4
+learning_rate: 1e-3
+weight_decay: 1e-5
+optimizer: "adamw"
+scheduler: "plateau"

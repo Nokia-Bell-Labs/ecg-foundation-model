@@ -1,0 +1,13 @@
+name: "ecgfounder" 
+
+checkpoint_path: "models/ecgfounder"
+
+lead_config: "1lead"  # 1lead, 12lead
+
+model_size: ecgfounder
+
+model_params:
+  do_proj: false  # Whether to use projection head
+  linear_prob: false
+  feature_dim: 1024
+  

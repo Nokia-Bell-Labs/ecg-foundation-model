@@ -1,0 +1,9 @@
+data_group: aurorabp
+name: aurorabp
+name_short: aurorabp
+data_path: data/AuroraBP/
+metadata_path: null
+label_csv: null
+num_variables: null
+sample_rate: 500
+lead_num: 12
