@@ -1,0 +1,37 @@
+# Pretraining Guide
+
+Pretrain CLEF using contrastive learning methods.
+
+## Prerequisites
+
+Ensure the following data files are in place:
+
+| File | Location | Source |
+|------|----------|--------|
+| MIMIC-IV labels | `dataset/mimic-iv/LVEF.csv` | Already included (from [ECGFounder](https://github.com/PKUDigitalHealth/ECGFounder)) |
+| Noise data | `dataset/DATA_noises_real.mat` | Download from [PhysioNet](https://physionet.org/content/ecg-ppg-simulator-arrhythmia/1.3.1/) |
+
+**Download noise data:**
+```bash
+wget https://physionet.org/files/ecg-ppg-simulator-arrhythmia/1.3.1/ECG_PPG_model/DATA_noises_real.mat?download -P dataset/
+```
+
+---
+
+## Quick Start
+
+```bash
+python script/pretrain.py exp.devices=0 exp.pretrain_method=simclr exp.use_metadata=True model.model_size=large
+```
+
+**Examples:**
+```bash
+# CLEF: SimCLR with metadata (proposed method, large model)
+python script/pretrain.py exp.devices=0 exp.pretrain_method=simclr exp.use_metadata=True model.model_size=large
+
+# BYOL
+python script/pretrain.py exp.devices=0 exp.pretrain_method=byol
+
+# MoCo with single lead
+python script/pretrain.py exp.devices=0 exp.pretrain_method=moco
+```

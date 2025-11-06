@@ -252,7 +252,7 @@ def preprocess_icentia_rhythms(data_path, output_dir, input_len=1000, train_rati
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Preprocess Icentia ECG data')
-    parser.add_argument('--data_path', type=str, default="data/Icentia11K/data", help='Path to Icentia data directory')
+    parser.add_argument('--data_path', type=str, default="data/Icentia11K/physionet.org/data", help='Path to Icentia data directory')
     parser.add_argument('--output_dir', type=str, default="dataset/Icentia11K", help='Output directory for preprocessed data')
     parser.add_argument('--input_len', type=int, default=2500, help='Length of ECG segments to extract')
     parser.add_argument('--task', type=str, choices=['beat', 'rhythm', 'all'], default='all', 

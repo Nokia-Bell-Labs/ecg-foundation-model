@@ -78,7 +78,6 @@ if __name__ == "__main__":
             df.iterrows(), total=len(df), desc=f"Processing {data_type} data"
         ):
             row["ecg_path"] = row["ecg_path"].replace("/chapman", "")
-            # data_path = dataset_path + row["ecg_path"]
             data_path = row["ecg_path"]
             ecg_data = loadmat(dataset_path + data_path)["val"].astype(np.float32)
 
