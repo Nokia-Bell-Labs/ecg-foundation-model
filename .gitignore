@@ -197,4 +197,4 @@ wandb/
 chronos-forecasting/
 *.pt
 models/
-doc/
+configs/model/pretrained.yaml
