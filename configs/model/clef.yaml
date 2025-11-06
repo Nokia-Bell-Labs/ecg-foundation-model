@@ -1,7 +1,7 @@
 name: "clef" 
 
 checkpoint_path: "models/clef"
-statekey_file: "clef-small.ckpt"
+statekey_file: "clef_small.ckpt"
 
 lead_config: "1lead"
 

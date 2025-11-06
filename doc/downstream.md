@@ -11,7 +11,7 @@ python script/downstream.py model="<MODEL>" dataset="<DATASET>" exp="<EXP>" task
 **Examples:**
 ```bash
 # CLEF (our pretrained model)
-python script/downstream.py model="clef" model.model_size=large model.statekey_file="clef-large.ckpt" dataset="mcmed_data" exp="mcmed_downstream" task.type="classification" exp.task="ed-dispo"
+python script/downstream.py model="clef" model.model_size=large model.statekey_file="clef_large.ckpt" dataset="mcmed_data" exp="mcmed_downstream" task.type="classification" exp.task="ed-dispo"
 
 # Baseline: KED
 python script/downstream.py model="ked" dataset="music_data" exp="music_downstream" task.type="classification"
@@ -31,7 +31,7 @@ python script/downstream.py model="ecgfounder" dataset="ptbxl_data" exp="ptbxl_d
 python script/downstream.py \
     model="clef" \
     model.model_size="<SIZE>" \
-    model.statekey_file="clef-<SIZE>.ckpt" \
+    model.statekey_file="clef_<SIZE>.ckpt" \
     dataset="<DATASET>" \
     exp="<EXP>" \
     task.type="<TASK_TYPE>" \
@@ -45,7 +45,7 @@ python script/downstream.py \
 python script/downstream.py \
     model="clef" \
     model.model_size="large" \
-    model.statekey_file="clef-large.ckpt" \
+    model.statekey_file="clef_large.ckpt" \
     dataset="mcmed_data" \
     exp="mcmed_downstream" \
     task.type="classification" \
