@@ -283,7 +283,7 @@ model_mapping = {
     "moirai": register_moirai_model,
     "moment": register_moment_model,
     "resnet": register_resnet_model,
-    "pretrained": register_pretrained_resnet_model,
+    "clef": register_pretrained_resnet_model,
 }
 
 

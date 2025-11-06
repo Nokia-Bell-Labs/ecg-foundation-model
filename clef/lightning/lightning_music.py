@@ -70,6 +70,8 @@ class MusicDataModule(L.LightningDataModule):
                 label_map = {0: 0, 1: 1, 3: 2, 6: 3, 7: 3}
                 df = df[df["outcome"].isin(label_map.keys())].reset_index(drop=True)
                 df["outcome"] = df["outcome"].map(label_map)
+            else:
+                raise ValueError("MUSIC dataset only support classification tasks.")
 
             train = df.iloc[: int(0.7 * len(df))]
             val = df.iloc[int(0.7 * len(df)) : int(0.8 * len(df))]

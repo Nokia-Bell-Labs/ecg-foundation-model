@@ -282,8 +282,6 @@ class BaseModelClassifier(L.LightningModule):
                 # For multi-label, convert logits to probabilities
                 probs = torch.sigmoid(logits)
                 self.val_metrics(probs, y.long())
-            # elif self.is_binary:
-            #     self.val_metrics(logits, y)
             else:
                 self.val_metrics(logits, y)
 
