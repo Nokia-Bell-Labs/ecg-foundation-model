@@ -1,5 +1,5 @@
 <div align="center">
-  <table border="0">
+  <table>
     <tr>
       <td><img src="figures/clef_logo.png" alt="CLEF Logo" width="100"></td>
       <td>
