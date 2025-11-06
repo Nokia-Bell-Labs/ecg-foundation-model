@@ -17,8 +17,8 @@
 
 ## 🚀 News
 
-- **[Oct 2024]** Paper released on arXiv
-- **[Oct 2024]** Code and pretrained weights released
+- **[Nov 2025]** Paper released on arXiv
+- **[Nov 2025]** Code and pretrained weights released
 
 ## ✨ Introduction
 
@@ -58,7 +58,7 @@ If you use CLEF in your research, please cite:
   title={CLEF: Clinically-Guided Contrastive Learning for Electrocardiogram Foundation Models},
   author={Your Name},
   journal={arXiv preprint arXiv:xxxxx},
-  year={2024}
+  year={2025}
 }
 ```
 
