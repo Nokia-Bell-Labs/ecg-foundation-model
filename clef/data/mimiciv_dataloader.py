@@ -70,11 +70,9 @@ class MIMICIVECGContrastiveDataset(BaseECGContrastiveDataset):
     
     def _find_files(self) -> List[str]:
         """Find all available record IDs in the dataset"""
-        # file_csv = self.data_path + "record_list.csv"
         file_csv = "dataset/mimic-iv/patientrecord_list.csv"
         file_list = pd.read_csv(file_csv)
         
-        # files = file_list.head(384)["path"].tolist()
         files = file_list["path"].tolist()
         return files
 

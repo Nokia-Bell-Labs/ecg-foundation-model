@@ -2,7 +2,7 @@ data_group: mimiciv
 name: mimiciv
 name_short: mimiciv
 data_path: data/MimicIV/physionet.org/content/mimic-iv-ecg/get-zip/1.0/mimic-iv-ecg-diagnostic-electrocardiogram-matched-subset-1.0/
-metadata_path: dataset/mimic-iv/mimiciv_metadata_with_score2_wm.csv
+metadata_path: dataset/mimic-iv/mimiciv_metadata_with_score2.csv
 label_csv: dataset/mimic-iv/LVEF.csv
 num_variables: null
 sample_rate: 100
