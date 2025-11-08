@@ -1,10 +1,4 @@
-# Main configuration file for model pretraining
-
 defaults:
-  # - model: dummy_model
-  # - model: ked
-  # - model: stmem
-  # - model: moment
   - model: resnet
 
   - dataset: mimiciv_data
