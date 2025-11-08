@@ -280,7 +280,11 @@ class ContrastiveModel(L.LightningModule):
         return loss
 
     def _moco_loss(self, q, k):
-        """MoCo contrastive loss"""
+        """MoCo contrastive loss (Momentum Contrast).
+
+        Reference implementation:
+        https://github.com/facebookresearch/moco
+        """
         # Normalize features
         q = F.normalize(q, dim=1)
         k = F.normalize(k, dim=1)
@@ -296,7 +300,11 @@ class ContrastiveModel(L.LightningModule):
         return loss
 
     def _byol_loss(self, p1, z2, p2, z1):
-        """BYOL loss (symmetric)"""
+        """BYOL loss (symmetric).
+
+        Reference implementation:
+        https://github.com/lucidrains/byol-pytorch
+        """
         def cosine_loss(p, z):
             p = F.normalize(p, dim=1)
             z = F.normalize(z, dim=1)
