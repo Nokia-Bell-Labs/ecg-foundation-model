@@ -70,18 +70,47 @@ pip install -e .
 
 ---
 
-## Option 3: uv (toml + uv sync)
+## Option 3: uv (Recommended for Fast Setup)
+
+[uv](https://github.com/astral-sh/uv) is a fast Python package installer and resolver.
+
+### 1. Sync Dependencies
 
 From the project root:
 
 ```bash
 uv sync
-uv shell
+```
+
+This will create a virtual environment in `.venv` and install all dependencies from `pyproject.toml`.
+
+### 2. Activate Virtual Environment
+
+```bash
+source .venv/bin/activate
+```
+
+### 3. Install Additional Dependencies
+
+Install fastai (not included in pyproject.toml):
+
+```bash
+uv pip install fastai
+```
+
+### 4. Install CLEF Package in Editable Mode
+
+```bash
 uv run python -m pip install -e .
 ```
 
+Or, with the virtual environment activated:
 
+```bash
+pip install -e .
+```
 
+---
 
 ## Verify GPU Access
 
