@@ -40,6 +40,12 @@ CLEF is an ECG foundation model trained with clinically-guided contrastive learn
 - [Dataset Preparation](doc/dataset_preparation.md) — Prepare PTB-XL, ICENTIA, etc.
 - [Example Notebooks](notebooks/) — Jupyter tutorials
 
+## 🧭 Quick Start
+
+- Launch the interactive quickstart notebook:
+
+- `notebooks/clef_quickstart.ipynb`
+
 ## 📦 Available Models
 
 | Model | Parameters | PTB-XL (Macro F1) | Download |
