@@ -35,7 +35,7 @@ dependencies = [
 
 
 [tool.uv]
-python = "3.12"
+python-preference = "3.12"
 env = "clef"
 
 # Install packages from requirements.txt (keeps dependency list in one place)
