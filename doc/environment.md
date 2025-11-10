@@ -29,15 +29,8 @@ docker run -dit \
   --name clef_container \
   --shm-size=8G \
   -v $(pwd):/CLEF \
-  -v /path/to/datasets:/datasets \
-  -v /path/to/models:/models \
   clef_image
 ```
-
-**Volume mounts (customize as needed):**
-- `-v $(pwd):/CLEF` — mount code directory
-- `-v /path/to/datasets:/datasets` — mount dataset directory
-- `-v /path/to/models:/models` — mount model checkpoint directory
 
 ### 3. Access the Container
 
@@ -75,13 +68,20 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-### 3. Verify Installation
+---
+
+## Option 3: uv (toml + uv sync)
+
+From the project root:
 
 ```bash
-python -c "import clef; print(clef.__version__)"
+uv sync
+uv shell
+uv run python -m pip install -e .
 ```
 
----
+
+
 
 ## Verify GPU Access
 
@@ -91,33 +91,9 @@ python -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}')"
 
 Expected output: `CUDA available: True`
 
----
 
-## Troubleshooting
 
-### Docker: Permission Denied
 
-```bash
-sudo usermod -aG docker $USER
-newgrp docker
-```
-
-### Conda: CUDA Mismatch
-
-Ensure PyTorch CUDA version matches your system:
-
-```bash
-python -c "import torch; print(torch.version.cuda)"
-nvidia-smi
-```
-
-Reinstall PyTorch with correct CUDA version if needed:
-
-```bash
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
-```
-
----
 
 ## Next Steps
 
