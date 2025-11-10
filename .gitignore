@@ -196,5 +196,6 @@ dataset_copy/
 wandb/
 chronos-forecasting/
 *.pt
-models/
+/models/
+!/clef/baselines/models/
 configs/model/pretrained.yaml
