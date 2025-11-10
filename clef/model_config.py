@@ -272,7 +272,13 @@ def register_pretrained_resnet_model(config):
         for param in model.parameters():
             param.requires_grad = False
 
-    model.name = f"{pth_name.split("_")[0]}-{pth_name.split("_")[2]}"
+    base = os.path.basename(pth_name)
+    stem = os.path.splitext(base)[0]
+    stem_parts = stem.split('_')
+    suffix = stem_parts[1] if len(stem_parts) >= 2 else stem_parts[0]
+    prefix = stem_parts[0]
+
+    model.name = f"{prefix}-{suffix}"
     return model
 
 
