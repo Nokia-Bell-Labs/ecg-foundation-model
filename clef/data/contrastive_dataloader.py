@@ -101,9 +101,7 @@ class BaseECGContrastiveDataset(Dataset):
                 segments.append(start)
 
             # Extract patient_id from fname
-            patient_id = (
-                fname.split(os.sep)[0] if os.sep in fname else fname.split("_")[0]
-            )
+            patient_id = fname.split('/')[-3]
             self.patient_to_channels[patient_id] = [
                 (ch_idx, ch_name, ch_freq, fname)
                 for ch_idx, ch_name in enumerate(channel_names)
@@ -136,7 +134,7 @@ class BaseECGContrastiveDataset(Dataset):
     
     def __getitem__(self, idx):
         fname = self.filenames[idx]
-        patient_id = fname.split(os.sep)[0] if os.sep in fname else fname.split("_")[0]
+        patient_id = fname.split('/')[-3]
         channel_infos = self.patient_to_channels[patient_id]
 
         if self.use_metadata:
