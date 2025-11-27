@@ -158,7 +158,9 @@ class BaseECGContrastiveDataset(Dataset):
             ch_idx2 = ch_idx1
                 
         seg2 = self._read_partial_record(fname2, 0, self.input_len)[:, ch_idx2]
-
+        seg1 = self._interpolate_nan(seg1)
+        seg2 = self._interpolate_nan(seg2)
+        
         seg1 = np.expand_dims(seg1, axis=0)
         seg2 = np.expand_dims(seg2, axis=0)
 
@@ -188,4 +190,36 @@ class BaseECGContrastiveDataset(Dataset):
         labels = torch.tensor(labels, dtype=torch.long)
 
         return signals, labels, ch_names, ch_freqs, metadata
+
+    def _interpolate_nan(self, signal: np.ndarray) -> np.ndarray:
+        """
+        Interpolate NaN values in the signal using linear interpolation.
+        
+        Args:
+            signal: 1D numpy array that may contain NaN values
+            
+        Returns:
+            signal with NaN values interpolated
+        """
+        if not np.isnan(signal).any():
+            return signal
+        
+        # Find indices of non-NaN and NaN values
+        nan_mask = np.isnan(signal)
+        valid_indices = np.where(~nan_mask)[0]
+        nan_indices = np.where(nan_mask)[0]
+        
+        # If all values are NaN, return zeros
+        if len(valid_indices) == 0:
+            return np.zeros_like(signal)
+        
+        # If only some values are NaN, interpolate
+        if len(nan_indices) > 0:
+            signal[nan_indices] = np.interp(
+                nan_indices, 
+                valid_indices, 
+                signal[valid_indices]
+            )
+        
+        return signal
 
