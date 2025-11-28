@@ -15,6 +15,10 @@
   </p>
 </div>
 
+## 🌟 Highlights
+
+
+
 ## 🚀 News
 
 - **[Nov 2025]** Paper released on arXiv
@@ -26,10 +30,9 @@ CLEF is an ECG foundation model trained with clinically-guided contrastive learn
 
 
 **Key features:**
-- Metadata-guided contrastive pretraining (SimCLR, BYOL, MoCo)
-- Support for 1-lead and 12-lead ECG configurations
-- Pretrained models: small, base, large
-- Easy downstream task evaluation
+- Clinical-informed contrastive pretraining for better representation
+- Pretrained models on 3 sizes: small, base, large
+- Easy single-lead ECG representation extraction and downstream task evaluation
 
 ## 📚 Documentation
 
@@ -65,6 +68,7 @@ We gratefully acknowledge the contributions of the following projects, which wer
 * **ECGFounder**: [PKUDigitalHealth/ECGFounder](https://github.com/PKUDigitalHealth/ECGFounder)
 * **KED**: [control-spiderman/ECGFM-KED](https://github.com/control-spiderman/ECGFM-KED)
 * **ST-MEM**: [bakqui/ST-MEM](https://github.com/bakqui/ST-MEM)
+* **SimCLR**: [sthalles/SimCLR](https://github.com/sthalles/SimCLR)
 * **BYOL**: [lucidrains/byol-pytorch](https://github.com/lucidrains/byol-pytorch)
 * **MoCo**: [facebookresearch/moco](https://github.com/facebookresearch/moco)
 
