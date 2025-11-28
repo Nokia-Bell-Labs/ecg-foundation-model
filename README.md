@@ -17,7 +17,7 @@
 
 ## 🌟 Highlights
 
-
+The electrocardiogram~(ECG) is a key diagnostic tool in cardiovascular health. Single-lead ECG recording is integrated into both clinical-grade and consumer wearables. We propose CLEF, the first foundation model for single-lead ECG, leveraging metadata–derived risk scoresn for each patient as guided supervisory signals. CLEF was pretrained on 161K patients from MIMIC-IV0ECG using 12-lead ECGs, designed to operate on single-lead signals. We evaluated on 18 clinical classification and regression tasks across 7 held-out datasets, and benchmarked against 5 foundation model baselines and 3 self-supervised learning algorithms. Overall, out method achieves an ≥ 2.6% improvement in average AUROC for classification, and ≥ 3.2% reduction in MAE for regression, outperforming all self-supervised foundation model baselines. Beyond accuracy, CLEF advances multifacet and robust single-lead ECG analysis, enabling next-generation remote health monitoring and wearable intelligence.
 
 ## 🚀 News
 
@@ -45,17 +45,15 @@ CLEF is an ECG foundation model trained with clinically-guided contrastive learn
 
 ## 🧭 Quick Start
 
-- Launch the interactive quickstart notebook:
-
-- `notebooks/clef_quickstart.ipynb`
+- Launch the interactive quickstart notebook: `notebooks/clef_quickstart.ipynb`
 
 ## 📦 Available Models
 
-| Model | Parameters | PTB-XL (Macro F1) | Download |
-|-------|-----------|-------------------|----------|
-| CLEF-Small | 448K | 0.XX | [Zenodo](#) |
-| CLEF-Base | 30.7M | 0.XX | [Zenodo](#) |
-| CLEF-Large | 296M | 0.XX | [Zenodo](#) |
+| Model | Parameters | Download |
+|-------|-----------|----------|
+| CLEF-Small | 448K | [Zenodo](#) |
+| CLEF-Base | 30.7M | [Zenodo](#) |
+| CLEF-Large | 296M | [Zenodo](#) |
 
 
 ## 🙏 Acknowledgements
@@ -85,5 +83,3 @@ If you use CLEF in your research, please cite:
   year={2025}
 }
 ```
-
-## 📄 License
