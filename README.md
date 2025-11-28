@@ -55,6 +55,20 @@ CLEF is an ECG foundation model trained with clinically-guided contrastive learn
 | CLEF-Large | 296M | 0.XX | [Zenodo](#) |
 
 
+## 🙏 Acknowledgements
+
+We gratefully acknowledge the contributions of the following projects, which were instrumental in the evaluation of CLEF:
+
+
+* **Moment**: [moment-timeseries-foundation-model/moment](https://github.com/moment-timeseries-foundation-model/moment)
+* **Moirai**: [SalesforceAIResearch/uni2ts](https://github.com/SalesforceAIResearch/uni2ts)
+* **ECGFounder**: [PKUDigitalHealth/ECGFounder](https://github.com/PKUDigitalHealth/ECGFounder)
+* **KED**: [control-spiderman/ECGFM-KED](https://github.com/control-spiderman/ECGFM-KED)
+* **ST-MEM**: [bakqui/ST-MEM](https://github.com/bakqui/ST-MEM)
+* **BYOL**: [lucidrains/byol-pytorch](https://github.com/lucidrains/byol-pytorch)
+* **MoCo**: [facebookresearch/moco](https://github.com/facebookresearch/moco)
+
+
 ## 📝 Citation
 
 If you use CLEF in your research, please cite:
