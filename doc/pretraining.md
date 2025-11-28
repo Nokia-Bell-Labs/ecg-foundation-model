@@ -8,7 +8,6 @@ Ensure the following data files are in place:
 
 | File | Location | Source |
 |------|----------|--------|
-| MIMIC-IV labels | `dataset/mimic-iv/LVEF.csv` | Already included (from [ECGFounder](https://github.com/PKUDigitalHealth/ECGFounder)) |
 | Noise data | `dataset/DATA_noises_real.mat` | Download from [PhysioNet](https://physionet.org/content/ecg-ppg-simulator-arrhythmia/1.3.1/) |
 
 **Download noise data:**
