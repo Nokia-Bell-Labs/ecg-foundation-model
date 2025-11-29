@@ -2,6 +2,9 @@
 
 ## Manual Download Required
 
+### CLEF 
+Model weights of our pretrained models will be made publicallt available.
+
 ### ST-MEM
 - **Download**: [Google Drive](https://drive.google.com/file/d/14nScwPk35sFi8wc-cuLJLqudVwynKS0n/view?usp=share_link)
 - **Paper**: https://openreview.net/pdf?id=WcOohbsF4H

@@ -18,9 +18,8 @@ Note: The noise data must be downloaded from PhysioNet and placed at `dataset/DA
 wget https://physionet.org/files/ecg-ppg-simulator-arrhythmia/1.3.1/ECG_PPG_model/DATA_noises_real.mat?download -P dataset/
 ```
 
-[TODO]
 Note: The MIMIC‑IV metadata file `mimiciv_metadata_with_score2.csv` must be downloaded from Zenodo and placed at
-`dataset/mimic-iv/mimiciv_metadata_with_score2.csv` before running pretraining (with metadata).
+`dataset/mimic-iv/mimiciv_metadata_with_score2.csv` before running pretraining (with metadata). This will be made publically available.
 
 ```bash
 wget -O dataset/mimic-iv/mimiciv_metadata_with_score2.csv \
