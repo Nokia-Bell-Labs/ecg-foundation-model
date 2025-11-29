@@ -43,6 +43,8 @@ CLEF is an ECG foundation model trained with clinically-guided contrastive learn
 
 ## 📦 Available Models
 
+    Note: We will release all pretrained models upon publication of the paper to support full reproducibility.
+
 | Model | Parameters |
 |-------|-----------|
 | CLEF-Small | 448K |
