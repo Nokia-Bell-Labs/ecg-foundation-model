@@ -9,7 +9,7 @@ Ensure the following data files are in place:
 | File | File name | Source |
 |------|----------|--------|
 | Noise data | `DATA_noises_real.mat` | Download from [PhysioNet](https://physionet.org/content/ecg-ppg-simulator-arrhythmia/1.3.1/) |
-| Risk scores | `mimiciv_metadata_with_score2.csv` | Download from [Zenodo]()|
+| Risk scores | `mimiciv_metadata_with_score2.csv` | Download from [Zenodo](https://zenodo.org/records/17572734/files/mimiciv_metadata_with_score2.csv?download=1)|
 | MIMIC-IV-ECG | - | Download from [PhysioNet](https://physionet.org/content/mimic-iv-ecg/1.0/) |
 
 **Download noise data:**
@@ -18,13 +18,12 @@ Note: The noise data must be downloaded from PhysioNet and placed at `dataset/DA
 wget https://physionet.org/files/ecg-ppg-simulator-arrhythmia/1.3.1/ECG_PPG_model/DATA_noises_real.mat?download -P dataset/
 ```
 
-[TODO]
-Note: The MIMIC‑IV metadata file `mimiciv_metadata_with_score2.csv` must be downloaded from Zenodo and placed at
+Note: The MIMIC‑IV metadata file `mimiciv_metadata_with_score2.csv` must be downloaded from [Zenodo](https://zenodo.org/records/17572734/files/mimiciv_metadata_with_score2.csv?download=1) and placed at
 `dataset/mimic-iv/mimiciv_metadata_with_score2.csv` before running pretraining (with metadata).
 
 ```bash
 wget -O dataset/mimic-iv/mimiciv_metadata_with_score2.csv \
-	"https://zenodo.org/record/xxxxxx/files/mimiciv_metadata_with_score2.csv?download=1"
+	"https://zenodo.org/records/17572734/files/mimiciv_metadata_with_score2.csv?download=1"
 ```
 
 ---

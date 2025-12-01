@@ -11,7 +11,7 @@
   
   <p>
     <a href="https://arxiv.org/abs/xxxxx"><img src="https://img.shields.io/badge/arXiv-2410.20542-b31b1b.svg" alt="ArXiv"></a>
-    <a href="https://zenodo.org/records/17572734"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.13983110.svg" alt="DOI"></a>
+    <a href="https://zenodo.org/records/17572734"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.17572734.svg" alt="DOI"></a>
   </p>
 </div>
 
