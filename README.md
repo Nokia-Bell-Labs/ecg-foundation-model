@@ -11,7 +11,7 @@
   
   <p>
     <a href="https://arxiv.org/abs/xxxxx"><img src="https://img.shields.io/badge/arXiv-2410.20542-b31b1b.svg" alt="ArXiv"></a>
-    <a href="https://zenodo.org/records/xxxx"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.13983110.svg" alt="DOI"></a>
+    <a href="https://zenodo.org/records/17572734"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.13983110.svg" alt="DOI"></a>
   </p>
 </div>
 
@@ -55,9 +55,9 @@ CLEF is an ECG foundation model trained with clinically-guided contrastive learn
 
 | Model | Parameters | Download |
 |-------|-----------|----------|
-| CLEF-Small | 448K | [Zenodo](#) |
-| CLEF-Base | 30.7M | [Zenodo](#) |
-| CLEF-Large | 296M | [Zenodo](#) |
+| CLEF-Small | 448K | [Zenodo](https://zenodo.org/records/17572734/files/clef_small.ckpt?download=1) |
+| CLEF-Medium | 30.7M | [Zenodo](https://zenodo.org/records/17572734/files/clef_medium.ckpt?download=1) |
+| CLEF-Large | 296M | [Zenodo](https://zenodo.org/records/17572734/files/clef_largel.ckpt?download=1) |
 
 
 ## 🙏 Acknowledgements
@@ -82,7 +82,7 @@ If you use CLEF in your research, please cite:
 ```bibtex
 @article{clef2024,
   title={CLEF: Clinically-Guided Contrastive Learning for Electrocardiogram Foundation Models},
-  author={Your Name},
+  author={Yuxuan Shu, Peter Charlton, Fahim Kawsar, Jussi Hernesniemi, Mohammad Malekzadeh},
   journal={arXiv preprint arXiv:xxxxx},
   year={2025}
 }
