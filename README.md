@@ -10,7 +10,7 @@
   </table>
   
   <p>
-    <a href="https://arxiv.org/abs/xxxxx"><img src="https://img.shields.io/badge/arXiv-2410.20542-b31b1b.svg" alt="ArXiv"></a>
+    <a href="https://arxiv.org/pdf/2512.02180"><img src="https://img.shields.io/badge/arXiv-2410.20542-b31b1b.svg" alt="ArXiv"></a>
     <a href="https://zenodo.org/records/17572734"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.17572734.svg" alt="DOI"></a>
   </p>
 </div>
@@ -25,12 +25,12 @@ The electrocardiogram~(ECG) is a key diagnostic tool in cardiovascular health. S
 
 ## 🚀 News
 
-- **[Nov 2025]** Paper released on arXiv
+- **[Dec 2025]** Paper released on arXiv
 - **[Nov 2025]** Code and pretrained weights released
 
 ## ✨ Introduction
 
-CLEF is an ECG foundation model trained with clinically-guided contrastive learning. This repository contains the implementation for our paper ["CLEF: Clinically-Guided Contrastive Learning for Electrocardiogram Foundation Models"](https://arxiv.org/abs/xxxxx).
+CLEF is an ECG foundation model trained with clinically-guided contrastive learning. This repository contains the implementation for our paper ["CLEF: Clinically-Guided Contrastive Learning for Electrocardiogram Foundation Models"](https://arxiv.org/pdf/2512.02180).
 
 
 **Key features:**
@@ -83,7 +83,7 @@ If you use CLEF in your research, please cite:
 @article{clef2024,
   title={CLEF: Clinically-Guided Contrastive Learning for Electrocardiogram Foundation Models},
   author={Yuxuan Shu, Peter Charlton, Fahim Kawsar, Jussi Hernesniemi, Mohammad Malekzadeh},
-  journal={arXiv preprint arXiv:xxxxx},
+  journal={arXiv preprint arXiv:2512.02180},
   year={2025}
 }
 ```
