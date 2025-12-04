@@ -10,7 +10,7 @@
   </table>
   
   <p>
-    <a href="https://arxiv.org/pdf/2512.02180"><img src="https://img.shields.io/badge/arXiv-2410.20542-b31b1b.svg" alt="ArXiv"></a>
+    <a href="https://arxiv.org/pdf/2512.02180"><img src="https://img.shields.io/badge/arXiv-2512.02180-b31b1b.svg" alt="ArXiv"></a>
     <a href="https://zenodo.org/records/17572734"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.17572734.svg" alt="DOI"></a>
   </p>
 </div>
